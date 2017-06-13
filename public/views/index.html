@@ -78,10 +78,10 @@
 
       <section>
         <h2>NG-Repeat Animation</h2>
-        <div class="itemHolder">
-          <ul>
-            <li ng-repeat = "item in na.itemsShown track by $index">{{item}}</li>
-          </ul>
+        <div class="listHolder">
+          <div class="itemHolder" ng-repeat = "item in na.itemsShown track by $index">
+            <span class="itemText">{{item}}</span>
+          </div>
         </div>
         <button type="button" name="button" ng-click = "na.addItems()">Add Items</button>
         <button type="button" name="button" ng-click = "na.removeItems()">Remove Items</button>

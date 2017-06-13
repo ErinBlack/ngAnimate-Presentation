@@ -13,8 +13,7 @@ myApp.controller('NpAnimate', function(){
     'item3',
     'item4',
     'item5',
-    'item6',
-    'item7',
+    'item6'
   ];
   vm.itemsShown = [ ];
 
@@ -31,6 +30,7 @@ myApp.controller('NpAnimate', function(){
   vm.addItems = function(){
     if (vm.itemCount > vm.items.length-1) {
       alert('Out of items to Display');
+      return itemCount;
     }
     vm.itemsShown.push(vm.items[vm.itemCount]);
     vm.itemCount ++;
@@ -39,6 +39,7 @@ myApp.controller('NpAnimate', function(){
   vm.removeItems = function(){
     if (vm.itemCount < 1) {
       alert('Out of items to Remove');
+      return itemCount;
     }
     vm.itemsShown.pop(vm.items[vm.itemCount]);
     vm.itemCount --;
