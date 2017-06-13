@@ -1,0 +1,80 @@
+button {
+  margin: 30px 0 0 0 ;
+  height: 30px;
+  width: 200px;
+  border: none;
+  font-size: 1.4em;
+}
+
+
+/* --- Styles for the ng-show and hide  ---- */
+
+
+.boxHolder {
+  height: 150px;
+}
+/*Created a box with the .hideShow div. Set the color, size and transition*/
+
+.hideShow{
+  width: 300px;
+  height: 150px;
+  background-color: #350399;
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: all linear .5s;
+}
+
+/* the .ng-hide class changes the position of the box to -200px top margin,
+left 200px and background color to transparent*/
+
+/*The Angular Animation give a smooth transition from one class to another
+on hide and show*/
+.ng-hide {
+  height: 0;
+  width: 0;
+  background-color: transparent;
+  top:-200px;
+  left: 200px;
+}
+
+/* Styles for ng-repeat*/
+
+.ng-enter {
+  -webkit-transition: 1s;
+  transition: 1s;
+  margin-left: 100%;
+}
+
+.ng-enter-active {
+  margin-left: 0;
+}
+
+.ng-leave {
+  -webkit-transition: 1s;
+  transition: 1s;
+
+  margin-left: 0;
+}
+
+.ng-leave-active {
+  margin-left: 100%;
+}
+
+.ng-move {
+  -webkit-transition: 1s;
+  transition: 1s;
+
+  background: gold;
+}
+
+.ng-move-active {
+  background: #fff;
+}
+
+
+footer{
+  background-color: #eeeeee;
+  height: 60px;
+  margin-top: 80px;
+}
